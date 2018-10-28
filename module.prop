@@ -1,7 +1,7 @@
-id=template
-name=Template Module
+id=lineage-recorder
+name=LineageOS Recorder Installer
 version=v1
 versionCode=1
-author=topjohnwu
-description=A short description
+author=nonnymoose
+description=Installs the LineageOS Recorder app on most ROMs
 minMagisk=17000

@@ -86,9 +86,9 @@ MODPATH=$MOUNTPATH/$MODID
 print_modname
 
 # Please leave this message in your flashable zip for credits :)
-ui_print "******************************"
-ui_print "Powered by Magisk (@topjohnwu)"
-ui_print "******************************"
+ui_print "********************************"
+ui_print " Powered by Magisk (@topjohnwu) "
+ui_print "********************************"
 
 ##########################################################################################
 # Install
@@ -119,8 +119,6 @@ done
 # Auto Mount
 $AUTOMOUNT && touch $MODPATH/auto_mount
 
-# prop files
-$PROPFILE && cp -af $INSTALLER/common/system.prop $MODPATH/system.prop
 
 # Module info
 cp -af $INSTALLER/module.prop $MODPATH/module.prop
@@ -129,12 +127,6 @@ if $BOOTMODE; then
   mktouch /sbin/.core/img/$MODID/update
   cp -af $INSTALLER/module.prop /sbin/.core/img/$MODID/module.prop
 fi
-
-# post-fs-data mode scripts
-$POSTFSDATA && cp -af $INSTALLER/common/post-fs-data.sh $MODPATH/post-fs-data.sh
-
-# service mode scripts
-$LATESTARTSERVICE && cp -af $INSTALLER/common/service.sh $MODPATH/service.sh
 
 ui_print "- Setting permissions"
 set_permissions

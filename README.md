@@ -1,7 +1,7 @@
-# Magisk Module Template
+# LineageOS Recorder Installer
 
-**Update `README.md` if you want to submit your module to the online repo!** This `README.md` will be shown in a Webview dialog when a user taps your module in Magisk Manager, so make sure to place some information / changelog / notes here.
+This module installs the LineageOS Recorder app into `/system/priv-app/` and the necessary XML files to allow screen recording into `/system/etc/permissions/`.
 
-If you are not familiar with the Markdown syntax, you can start by experimenting on GitHub's online Markdown editor, which will let you preview before publishing. If you need more help, the [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) will be handy.
+## Warning!
 
-For more information about modules and repos, please check the [official documentation](https://topjohnwu.github.io/Magisk/)
+On my device installing Magisk modules that modify system apps sometimes randomly removes apps from my launcher. **You might want to back up your launcher data first!**
